@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>InmarAutomation</title>
+    <link rel="stylesheet" href="popup.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <h1>InmarAutomation</h1>
+        <p class="subtitle">Pharmacy Tech Helper</p>
+      </header>
+
+      <main>
+        <!-- Status indicator -->
+        <div class="status-bar">
+          <span id="status-dot" class="dot inactive"></span>
+          <span id="status-text">Inactive</span>
+        </div>
+
+        <!-- Action buttons -->
+        <section class="actions">
+          <button id="btn-run" class="btn btn-primary">Run Automation</button>
+          <button id="btn-stop" class="btn btn-danger" disabled>Stop</button>
+        </section>
+
+        <!-- Log / output area -->
+        <section class="log-section">
+          <h2>Log</h2>
+          <div id="log" class="log-box" aria-live="polite"></div>
+          <button id="btn-clear-log" class="btn btn-secondary">Clear Log</button>
+        </section>
+      </main>
+
+      <footer>
+        <small>v1.0.0</small>
+      </footer>
+    </div>
+
+    <script src="popup.js"></script>
+  </body>
+</html>
