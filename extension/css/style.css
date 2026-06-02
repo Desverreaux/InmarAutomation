@@ -1,0 +1,33 @@
+.INJ-redOverlay{
+    position: 'fixed';
+    top: 0;
+    left: 0;
+    width: '100%';
+    height: '100%';
+    background-Color: 'red';
+    opacity: '0.5';
+    z-Index: 9999;
+}
+
+.INJ-greenOverlay{
+    position: 'absolute' !important;
+    top: 0 !important;
+    left: 0 !important;
+    width: '100%' !important;
+    height: '98%' !important;
+    background-Color: 'green' !important;
+    opacity: '0.1' !important;
+    z-Index: 9999 !important;
+}
+
+.INJ-greenOverlay::after{
+    position: 'absolute' !important;
+    top: 0;
+    left: 0;
+    width: '100%';
+    height: '98%';
+    background-Color: 'green';
+    opacity: '0.1';
+    pointer-events: 'none';
+    z-Index: 9999;
+}

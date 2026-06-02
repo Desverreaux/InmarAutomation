@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Inmar Automation</title>
+  <style>
+    body {
+      width: 250px;
+      padding: 16px;
+      font-family: Arial, sans-serif;
+      font-size: 14px;
+    }
+    h2 {
+      margin: 0 0 12px;
+      font-size: 16px;
+    }
+    button {
+      width: 100%;
+      padding: 8px;
+      margin-top: 8px;
+      cursor: pointer;
+      background-color: #1a73e8;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      font-size: 14px;
+    }
+    button:hover {
+      background-color: #1558b0;
+    }
+    #status {
+      margin-top: 10px;
+      font-size: 12px;
+      color: #555;
+    }
+  </style>
+</head>
+<body>
+  <h2>Inmar Automation</h2>
+  <button id="runBtn">Fire Button Event</button>
+  <div id="status"></div>
+
+  <script type="module" src="../Scripts/popup.js"></script>
+</body>
+</html>

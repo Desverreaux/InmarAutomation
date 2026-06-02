@@ -1,0 +1,54 @@
+{
+  "manifest_version": 3,
+  "name": "Inmar Automation",
+  "version": "0.2",
+  "description": "Automates repetitive tasks for pharmacy techs on Inmar",
+
+  "action": {
+    "default_popup": "./html/popup.html",
+    "default_icon": "./icons/InmarLogo.png"
+  },
+
+  "background": {
+    "service_worker": "./Scripts/service-worker.js"
+  },
+
+  "content_scripts": [
+    {
+      "matches": ["*://app.rxtransparent.net/*"],
+      "js": ["./Scripts/LoadEvent.js"],
+      "run_at": "document_start",
+      "world": "MAIN"
+
+    },
+    {
+      "matches": ["*://app.rxtransparent.net/*"],
+      "css": [
+        "./css/style.css"
+      ],
+      "run_at": "document_end"
+    },
+    {
+      "matches": ["*://app.rxtransparent.net/*"],
+      "js": [
+        "./Scripts/data.js",
+        "./Scripts/events.js",
+        "./Scripts/content.js"
+      ],
+      "run_at": "document_end"
+    }
+    
+  ],
+
+  "permissions": [
+    "activeTab",
+    "scripting",
+    "storage",
+    "alarms",
+    "tabs"
+  ],
+
+  "host_permissions": [
+    "<all_urls>"
+  ]
+}

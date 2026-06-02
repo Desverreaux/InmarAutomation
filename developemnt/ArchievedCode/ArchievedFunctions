@@ -1,0 +1,16 @@
+// function getTransactionsOnPage() {
+//   const rows = document.querySelectorAll('tr.p-selectable-row');
+//   const entries = []
+
+//   for (let row of rows) {
+//       const cells = row.children;
+//       if(drugInstance.isRow(cells)) {
+//         let validEntry = new drugInstance(cells)
+//         entries.push(validEntry);
+//       }
+
+//       entries.push(new )
+//   }
+//   return entries;
+
+// }
